@@ -1,0 +1,114 @@
+@charset "utf-8";
+#product{
+    height:3000px;
+    width:1400px;
+    margin:0 auto;
+}
+.news_img{ /*product*/
+    width:1000px;
+    height:104px;
+    margin-left:40px;
+    margin-bottom:20px;
+}
+#product_right{
+    float:right;
+    width:1100px;
+    height:1000px;
+}
+/*이미지들*/
+.img{
+    width:250px;
+    height:430px;
+    float:left;
+    margin-right:20px;
+    margin-bottom:50px;
+}
+.img a{
+    color:#000000;
+}
+.img_layout{
+    width:260px;
+    height:430px;
+    border:1px solid #999999;
+    border-radius:10px;
+    cursor:pointer;
+    box-shadow:0 2px 4px rgba(0,0,0,0.2);
+    transition:all 0.3s ease-in;
+    text-align:center;
+    padding-top:10px;
+    padding-left:5px;
+    padding-right:5px;
+    box-sizing:border-box;
+}
+.img_layout:hover{
+    box-shadow:0 8px 16px rgba(0,0,0,0.3);
+}
+.img_layout figcaption{
+    text-align:center;
+    position:relative;
+    line-height:25px;
+}
+.new{    /*new*/
+    font-size:12px;
+    width:27px;
+    height:15px;
+    line-height:15px;
+    color:#ffffff;
+    margin-left:10px;
+    background-color:#cccccc;
+    margin-bottom:5px;
+    margin-top:2px;
+}
+.project{    /*기획전*/
+    font-size:12px;
+    width:40px;
+    height:15px;
+    line-height:15px;
+    color:#ffffff;
+    margin-left:10px;
+    background-color:#c3d8ed;
+    margin-bottom:5px;
+    margin-top:2px;
+}
+.monami_korean{  /*모나미*/
+    font-size:12px;
+    width:40px;
+    height:15px;
+    line-height:15px;
+    color:#ffffff;
+    margin-left:10px;
+    background-color:#d0c8c6;
+    margin-bottom:5px;
+    margin-top:2px;
+}
+.event{  /*이벤트*/
+    font-size:12px;
+    width:40px;
+    height:15px;
+    line-height:15px;
+    color:#ffffff;
+    margin-left:10px;
+    background-color:#e8d2ff;
+    margin-bottom:5px;
+    margin-top:2px;
+}
+.name{    /*제품 이름*/
+    font-size:16px;
+    font-weight:bold;
+}
+.limited{    /*한정판 제품*/
+    font-size:13px;
+    color:#1876af;
+}
+.explain{  /*제품 설명*/
+    font-size:13px;
+    color:#666666;
+}
+figcaption s{    /*이전 가격*/
+    font-size:14px;
+    color:#666666;
+}
+figcaption span{    /*할인 가격*/
+    font-size:16px;
+    color:#ff6462;
+}

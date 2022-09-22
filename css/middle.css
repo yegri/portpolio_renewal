@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+/*middle_wrap*/
+#middle_wrap{
+	width:1400px;
+	height:2800px;
+	margin:0 auto;
+	font-size:30px;
+}
+
+/*middle1*/
+.middle1{		/*모나미*/
+	width:1400px;
+	height:900px;
+}
+.middle1 h1{
+	background:url(../images/bar1.png) no-repeat;
+	margin-left:50px;
+	padding-top:20px;
+    font-size:50px;
+}
+.middle1 div{
+	width:1310px;
+	height:640px;
+	position:relative;
+	margin:40px auto;
+}
+.middle1 div p{	/*네모 박스들 전체*/
+	width:300px;
+	height:300px;
+	background-color:rgba(102,102,102,0.3);
+	position:absolute;
+	text-align:center;
+	line-height:300px;
+	font-size:30px;
+	letter-spacing:4px;
+	transition:all 1s;
+}
+.middle1 div p:hover{
+	cursor:pointer;
+}
+.middle1 div p:nth-child(1){ /*모나미 소개*/
+	top:0;
+	left:340px;
+    border-radius:20%;
+}
+.middle1 div p:nth-child(2){ /*모나미 제품*/
+	top:0;
+	left:680px;
+    border-radius:20%;
+}
+.middle1 div p:nth-child(3){ /*고객지원*/
+	top:0;
+	right:0;
+    border-radius:20%;        
+}
+.middle1 div p:nth-child(4){ /*모나미 미술대회*/
+	bottom:0;
+	left:0;
+    border-radius:20%;
+}
+.middle1 div p:nth-child(5){ /*News&Video*/
+	bottom:0;
+	left:340px;
+	border-radius:20%;
+	background-color:#6c8ec8;
+	line-height:200px;
+	padding-top:50px;
+	box-sizing:border-box;
+	opacity:1;
+	transition:all 1s;
+}
+.middle1 div p:nth-child(5):hover{
+	opacity:0.6;
+	text-decoration:underline;
+}
+.middle1 div p:nth-child(5) img{
+	width:150px;
+	height:150px;
+	transform:rotate(90deg) scale(1);
+	position:absolute;
+	bottom:0;
+	left:80px;
+}
+.middle1 div p:nth-child(5):hover img{
+	transform:rotate(90deg) scale(1.3);
+}
+.middle1 div p:nth-child(6){ /*ink lab*/ 
+	bottom:0;
+	right:0;
+    border-radius:20%;
+}
+.middle1 div p a{
+	color:#ffffff;
+}
+
+/*middle2*/
+.middle2{		/*NEWSROOM 전체*/
+    clear:both;
+	width:1400px;
+	height:800px;
+}
+.middle2 h1{    /*NEWSROOM*/
+	background:url(../images/bar1.png) no-repeat;
+	margin-left:50px;
+    margin-bottom:100px;
+	padding-top:20px;
+    font-size:50px;
+}
+#img_wrap { /*사진*/
+    width:400px;
+    height:270px;
+    padding:20px;
+    border:3px solid #ffffff;
+    float:left;
+    margin-left:100px;
+    margin-top:80px;
+    position: relative;
+}
+#img_wrap img{
+    box-sizing: border-box;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+#img_wrap img.selected{ /*js*/
+    z-index: 1;
+}
+.middle2_right{
+    float:right;
+    width:650px;
+    height:400px;
+    margin-right:100px;
+}
+.middle2_right div{
+    clear:both;
+    border-bottom:1px solid #cecece;
+    height:140px ;
+    margin-bottom:10px;
+}
+.middle2_right div p a{
+    color:#ffffff;
+    font-size:20px;
+}
+.middle2_right div p a:hover{
+    text-decoration:underline;
+}
+.middle2_right div .news_date{    /*날짜 공통*/
+    float:left;
+    margin-right:50px;
+}
+.middle2_right div .news_date .month{    /*년,월*/
+    width:50px;
+    height:20px;
+    font-size:20px;
+    float:left;
+    margin-bottom:30px;
+}
+.middle2_right div .news_date .day{    /*일*/
+    display:block;
+    clear:both;
+    font-size:40px;
+    width:70px;
+    height:60px;
+    float:left;
+    margin-left:15px;
+}
+.middle2_right div .news_txt{  /*뉴스 제목*/
+    float:left;
+    margin-top:30px;
+}
+
+/*middle3*/
+.middle3{		/*CONTACT US 전체*/
+	width:1400px;
+	height:900px;
+    position:relative;
+   
+}
+.middle3 h1{    /*CONTACT US*/
+	background:url(../images/bar1.png) no-repeat;
+	margin-left:50px;
+    margin-bottom:10px;
+	padding-top:20px;
+    font-size:50px;
+}
+#contact_wrap{
+    width:1300px;
+    height:800px;
+    margin:0 auto;
+}
+.contact_container1{    /*문의 폼*/
+    float:left;
+    width:600px;
+    height:700px;
+}
+#inquiry{    /*문의내용*/
+    width:590px;
+    height:50px;
+    padding-left:20px;
+    box-sizing:border-box;
+    background-color:#d7d5d4;
+}
+#u_name,#u_email,#u_tel,#u_title,#u_file{    /*이름,이메일,연락처,제목*/
+    width:590px;
+    height:50px;
+    font-weight:bold;
+    padding-left:20px;
+    box-sizing:border-box;
+    background-color:#d7d5d4;
+}
+#u_content{    /*내용*/
+    width:590px;
+    height:150px;
+    margin-top:10px;
+    line-height:150px;
+    font-weight:bold;
+    padding-left:20px;
+    box-sizing:border-box;
+    background-color:#d7d5d4;
+}
+#u_file{    /*파일 선택*/
+    border:1px solid black;
+    background:white;
+    width:590px;
+    height:50px;
+    margin-bottom:60px;
+    background-color:#d7d5d4;
+    line-height:50px;
+    color:#d7d5d4;
+}
+.contact_container2{    /*이용약관*/
+    float:right;
+    width:600px;
+    height:580px;
+    padding-top:20px;
+}
+.contact_container2 .text_wrap textarea{
+    width:600px;
+    height:580px;
+    resize:none;
+    font:normal 15px/1.5em maru,serif;
+    background-color:#d7d5d4;
+    color:#666666;
+}
+
+.contact_container2 p:last-child{ /*개인정보 이용수집 동의*/
+    width:600px;
+    height:30px;
+    line-height:30px;
+    float:left;
+    font-size:15px;
+    letter-spacing:3px;
+}
+.contact_container2 p:last-child input{
+    margin-right:10px;
+    width:20px;
+    height:20px;
+    float:left;
+    margin-top:6px;
+}
+ #btn{  /*SEND*/
+     width:400px;
+     height:40px;
+     position:absolute;
+     bottom:0px;
+     left:500px;
+     transition:all 0.3s;
+}
+#btn:hover{  /*SEND*/
+     box-shadow:inset 0 0 0 40px #777582;
+	 color:#ffffff;
+     border:none;
+}

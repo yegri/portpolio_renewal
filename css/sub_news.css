@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+#middle_wrap{
+    width: 1400px;
+    height: 1500px;
+    margin: 0 auto;
+}
+#middle_wrap h1{    /*NEWS&VIDEO*/
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+.tab{   /*보도자료, video*/
+    width: 1400px;
+    height: 30px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.tab li{
+    float: left;
+    width: 600px;
+    height: 30px;
+    border-bottom: 2px solid #cecece;
+    margin-right: 5px;
+}
+.tab li a{
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    width: 600px;
+    height: 30px;
+    text-align: center;
+}
+.tab li a.sel{
+    border-bottom: 2px solid #333333;
+    color: #333333;
+}
+/* 보도자료 내용들*/
+.list{
+    clear: both;
+    width: 1210px;
+    margin-left: 100px;
+}
+.list_box{
+    border-bottom: 1px solid #cecece;
+    width: 1210px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.list_left{ /*날짜*/
+    border-right: 1px solid #cecece;
+    width: 130px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+}
+.list_left span{
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+}
+.list_right{ /*기사*/
+    float: left;
+    width: 900px;
+    height: 80px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.list_right a:hover{
+    text-decoration: underline;
+}
+.list_right a p{    /*내용 일부*/
+    margin-top: 5px;
+    width: 800px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666666;
+}
+.view{ /*더보기*/
+    position:absolute;
+    top: 20px;
+    right: 50px;
+    transform: scale(1);
+}
+.view:hover{
+    transform:scale(1.2);
+}
+
+/* 동영상 자료 */
+#tab2 {
+    width: 1210px;
+    margin-left: 80px;
+}
+.video_box{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.thumarea img{
+    cursor: pointer;
+}
+.txtarea .title{
+    width: 335px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.txtarea .date{
+    text-align: center;
+}

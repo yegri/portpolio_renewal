@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/*애니메이션*/
+@keyframes ex1_ani{
+	from{
+		left:0;
+	}
+	to{
+		left:472px;
+	}
+}
+/*top_wrap*/
+#top_wrap{
+	width:1400px;
+	height:1900px;
+	margin:20px auto;
+}
+#main_top{
+	margin-top:100px;
+}
+#main_left{		/*사람 사진*/
+	position:relative;
+}
+#main_left p:nth-of-type(1){
+	float:left;
+}
+#main_left p:nth-of-type(1) img{
+	width: 654px;
+	height: 652px;
+	border:3px solid #ffffff;
+	padding:20px;
+	box-sizing:border-box;
+	margin-left:50px;
+	transform:scale(1);
+	transition:all 0.5s;
+}
+#main_left p:nth-of-type(1) img:hover{
+	cursor:pointer;
+	transform:scale(1.1);
+}
+#main_left p:nth-of-type(2), #main_left p:nth-of-type(3) {	/*어쩌면, 그중에서도 공통*/
+	clear:both;
+	position:absolute;
+	left:120px;
+	font:normal 60px/1.5em maru,serif;
+}
+#main_left p:nth-of-type(2){	/*어쩌면...*/
+	font-size:35px;
+	top:180px;
+	line-height:1.3em;
+}
+#main_left p:nth-of-type(3){	/*그중에서도...*/
+	font-size:18px;
+	top:380px;
+	line-height:1.2em;
+}
+#main_right {	/*MONAMI*/
+	float:left;
+	width:600px;
+	height:220px;
+	text-align:right;
+	border-bottom:1px solid #ffffff;
+	font:normal 200px/1.5em angel,fantasy;
+	margin-top:200px;
+	padding-right:30px;
+	box-sizing:border-box;
+	position:relative;
+}
+#main_right img{	/*볼펜로고*/
+	width:351px;
+	height:45px;
+	float:right;
+	transform:rotate(-75deg);
+	position:absolute;
+	bottom:140px;
+	right:-220px;
+	animation:ex1_ani 5s 1;
+	animation-direction:normal
+}
+/*동영상*/
+#main_bottom{
+	clear:both;
+}
+#main_bottom p:nth-of-type(2),#main_bottom p:nth-of-type(3){
+	font:normal 40px/1.5em maru,serif;
+}
+#main_bottom p:nth-of-type(2){
+	float:left;
+	width:1700px;
+	margin-left:100px;
+}
+#main_bottom p:nth-of-type(3){
+	float:right;
+	margin-right:100px;
+}
+
+/*top 버튼*/
+.top_btn{
+    position:fixed;
+    right:100px;
+    bottom:100px;
+}

@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/*middle_wrap*/
+#middle_wrap{
+    height:900px;
+}
+
+/*join_container*/
+#join_container{  /*회원가입*/
+    width: 100%;
+    height: 120px;
+    background-color: #e7eaed;
+}
+#join_container h3{
+    width: 600px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    background: url(../images/login_small.png) no-repeat 210px center;
+    padding-top: 30px;  /*높이 원래 120이었는데 padding30 때문에 90으로 바꿈*/
+}
+.information{     /* *는 필수입력 항목...*/
+    height:20px;
+    margin-bottom:5px;
+    margin-top:50px;
+    margin-left:250px;
+}
+#join_wrap{
+    width:1400px;
+    height:900px;
+    margin:0 auto;
+}
+#join{
+    width:900px;
+    margin:0 auto;
+}
+/*필수입력 항목, 선택 입력항목 전체*/
+#join fieldset{
+    border:1px solid #cccccc;
+    padding:10px;
+    margin-bottom:30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#join fieldset legend{
+    font-size:15px;
+    font-weight:bold;
+    padding:5px;
+}
+
+.box_i{
+    clear:both;
+    margin:10px 0;
+}
+
+/*필수 입력 항목 */
+.join1 label{
+    width:150px;
+    height:30px;
+    display:inline-block;
+    text-align:right;
+    line-height:30px;
+    margin-right:10px;
+}
+.join1 input{    /*공통*/
+    border:1px solid #cccccc;
+    height:30px;
+    text-align:center;    /*입력하면 가운데부터 입력됨*/
+}
+#u_name,#u_id,#pwd1,#pwd2,#u_mail,#u_phone,#u_birth{    /*이름,아이디,비밀번호,비밀번호 확인,이메일, 휴대폰번호,생년월일*/
+    width:400px;
+}
+
+.join1 button{  /*중복확인*/
+    width:80px;
+    height:30px;
+    margin-left:10px;
+    border:none;
+    cursor:pointer;
+}
+.join1 button:hover{
+    border:1px solid #666666;
+}
+
+/*선택 입력 항목*/
+.join2 label{     /*생년월일*/
+    width:150px;
+    height:30px;
+    display:inline-block;
+    text-align:right;
+    line-height:30px;
+    margin-right:10px;
+}
+.join2 span{       /*수신동의*/
+    width:150px;
+    height:30px;
+    display:inline-block;
+    text-align:right;
+    line-height:30px;
+    margin-right:10px;
+}
+.join2 input{    /*공통*/
+    border:1px solid #cccccc;
+    height:30px;
+    text-align:center;    /*입력하면 가운데부터 입력됨*/
+}
+.join2 #mail{  /*이메일 checkbox*/
+    margin-left:170px;
+    margin-bottom:5px;
+}
+.join2 .checkbox_t{  /*~~동의합니다.*/
+    width:500px;
+    height:20px;
+    line-height:20px;
+    text-align:left;
+    margin-left:5px;
+}
+.join2 .box_t{
+    letter-spacing:-1px;
+    font-size:14px;
+    margin-left:50px;
+}
+/*회원가입하기, 다시작성*/
+.btn{
+    width:320px;
+    height:30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.btn input{
+    width:150px;
+    height:30px;
+    float:left;
+    margin:0 5px;
+    cursor:pointer;
+    border:2px solid #cccccc;
+    border-radius:5px;
+}
+.btn input:hover{
+    background-color:#333333;
+    color:#ffffff;
+}

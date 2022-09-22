@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/* reset */
+a{
+    color: #333333;
+}
+/*top_wrap*/
+#top_wrap{
+    width:100%;
+    height: 210px;
+    min-width:1400px;
+    margin-bottom:50px;
+    border-bottom:1px solid #cecece;
+    border-top: 1px solid #cecece;
+}
+#main_top{
+    width:1400px;
+    height:210px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+}
+.main_social{
+    height:35px;
+    width:100%;
+    min-width:1400px;
+    border-bottom:1px solid #cecece;
+}
+
+
+#main_left{  /*페이스북,인스타 로고 전체*/
+    float:left;
+}
+#main_left p{ /*페이스북,인스타 로고*/
+    float:left;
+    margin-right:5px;
+}
+#main_right {  /*돋보기, SITE MAP, Login 전체*/
+    float:right;
+    height:30px;
+}
+#main_right p{
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    height:20px;
+    line-height:25px;
+    float:left;
+    border-right:1px solid #cccccc;
+}
+#main_right p img{ /*돋보기*/
+    height:30px;
+    transform:scale(1);
+}
+#main_right p img:hover{
+    transform:scale(1.1);
+}
+#main_right p:last-child{ /*login*/
+    border-right:none;
+}
+#main_right p a{
+    font:normal 15px/1.5em maru,serif;
+    color:#cccccc;
+}
+#main_right p a:hover{
+    font:normal 15px/1.5em maru,serif;
+    color:#666666;
+}
+
+/* 로고와 메뉴들 */
+.logo{   /*모나미 로고*/
+    float:left;
+    width:370px;
+    height:120px;
+    margin-top: 20px;
+}
+#menu_wrap{
+    float: left;
+    width: 1000px;
+    height: 45px;
+    margin-top: 70px;
+    font:normal 19px/1.5em choco, serif;
+}
+.menu{
+    width: 1000px;
+    height: 45px;
+    position: relative;
+}
+.menu > .sub_wrap{
+    float: left;
+    width: 165px;
+    text-align: center;
+    line-height: 45px;
+}
+.menu > .sub_wrap > a {
+    font-size: 19px;
+    display: block;
+    width: 165px;
+}
+.menu > .sub_wrap:hover > a{
+    color: #666666;
+}
+.line{
+    position:absolute;
+    width: 165px;
+    height: 2px;
+    bottom: 0;
+    background-color: #333333;
+    border-radius: 5px;
+    transition: all 0.8s ease;
+}
+.start, .menu > .sub_wrap:nth-child(1):hover ~ .line{
+    width: 165px;
+    left: 0;
+}
+.menu > li:nth-child(2):hover ~ .line{
+    left: 165px;
+}
+.menu > li:nth-child(3):hover ~ .line{
+    left: 330px;
+}
+.menu > li:nth-child(4):hover ~ .line{
+    left: 495px;
+}
+.menu > li:nth-child(5):hover ~ .line{
+    left: 660px;
+}
+.menu > li:nth-child(6):hover ~ .line{
+    left: 825px;
+}
+.menu > .sub_wrap > .sub{
+    height: 56px;
+    line-height: 50px;
+    position: absolute;
+    top: 45px;
+    z-index: 10;
+    font:normal 16px/1.5em maru, serif;
+}
+.menu > .sub_wrap > .sub1{
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+.menu > .sub_wrap > .sub2{
+    position: absolute;
+    left: 165px;
+    z-index: 10;
+}
+.menu > .sub_wrap > .sub3{
+    position: absolute;
+    left: 320px;
+    z-index: 10;
+}
+.menu > .sub_wrap > .sub4{
+    position: absolute;
+    left: 470px;
+    z-index: 10;
+}
+.menu > .sub_wrap > .sub5{
+    position: absolute;
+    left: 500px;
+    z-index: 10;
+}
+.menu > .sub_wrap > .sub6{
+    position: absolute;
+    left: 665px;
+    z-index: 10;
+}
+.menu > .sub_wrap > .sub > li{
+    height: 56px;
+    line-height: 50px;
+    font-size: 16px;
+    float: left;
+    margin-right: 20px;
+}
+.menu > .sub_wrap > .sub > li:nth-child(1){
+    margin-left: 20px;
+}
+.menu > .sub_wrap > .sub > li > a {
+    color: #666666;
+}
+.menu > .sub_wrap > .sub > li > a:hover {
+    color: #333333;
+}
+/*top 버튼*/
+.top_btn{
+    position:fixed;
+    right:100px;
+    bottom:100px;
+}
+
+
+

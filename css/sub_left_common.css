@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+#intro{  /*모나미 소개 전체*/
+    width:1400px;
+    height:9000px;
+    margin:0 auto;
+    font:normal 18px/1.5em maru,serif;
+    position: relative;
+}
+#intro_left{  /*모나미 소개 목차*/
+    width:250px;
+    height:100%;
+    background-size: 250px 500px;
+    float:left;
+    position: fixed;
+}
+#intro::before{    /*메뉴 선*/
+    content:"";
+    background-color:#cecece;
+    width:1px;
+    height:100%;
+    position:absolute;
+    top:-50px;
+    left:-10px;
+}
+.btn li{    
+    left: -14px;
+    color: rgba(206,206,206,0.8);
+    font-size: 10px;
+}
+#intro_left .circle1{
+    position: absolute;
+    top:132px;
+}
+#intro_left .circle2{
+    position: absolute;
+    top:182px;
+}
+#intro_left .circle3{
+    position: absolute;
+    top:232px;
+}
+#intro_left .circle4{
+    position: absolute;
+    top:282px;
+}
+#intro_left .circle5{
+    position: absolute;
+    top:332px;
+}
+#intro_left .circle6{
+    position: absolute;
+    top:382px;
+}
+.btn li.sel{
+    border-radius: 50%;
+    transform: scale(2);
+    color: rgba(110,110,162,0.8);
+}
+#intro_left h1{  /*모나미제품*/
+    width:165px;
+    height:40px;
+    font: normal 25px/40px choco, serif;
+    position: absolute;
+    top: 60px;
+    left: -10px;
+    border-top: 1px solid #cecece;
+    border-right: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+#intro_left .text{
+    position: absolute;
+    left: 10px;
+}
+#intro_left .text1{ /*펜*/
+    top: 135px;
+}
+#intro_left .text2{ /*마카*/
+    top: 185px;
+}
+#intro_left .text3{ /*형광펜*/
+    top: 235px;
+}
+#intro_left .text4{ /*미술용품*/
+    top: 285px;
+}
+#intro_left .text5{ /*기타*/
+    top: 335px;
+}
+#intro_left .text6{ /*카탈로그*/
+    top: 385px;
+}
+#intro_left ul li a{
+    font: lighter 16px choco, serif;
+    color:#333333;
+    display:block;
+    width:250px;
+}
+#intro_left ul li a:hover{
+    text-decoration:underline;
+}

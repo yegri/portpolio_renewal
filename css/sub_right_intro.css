@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+#intro_right{
+    float:right;
+    width:1000px;
+    height: 7000px;
+}
+#intro_right > div > h2{
+    font-size:25px;
+    border-left:2px solid black;
+    padding-left:10px;
+    margin-bottom:20px;
+}
+#intro_right .box{
+    width: 1000px;
+    height: 1200px;
+}
+
+#ceo {
+    border-bottom: 1px solid #cecece;
+    margin: 20px 0;
+}
+#ceo p:nth-of-type(1){  /*ceo메시지*/
+    width:835px;
+    height:428px;
+    border:1px solid #cccccc;
+    text-align:center;
+    padding:10px;
+    box-sizing:border-box;
+    margin-bottom:20px;
+}
+#ceo p:nth-of-type(2){
+    width:845px;
+    height:700px;
+    text-align:justify;
+}
+#ceo p:nth-of-type(2) strong{
+    text-decoration:underline;
+}
+#ceo p:nth-of-type(2) span{
+    float:right;
+}
+#history{
+    border-bottom: 1px solid #cecece;
+    margin: 20px 0;
+}
+#invest{
+    border-bottom: 1px solid #cecece;
+    margin: 20px 0;
+}
+#ci{
+    border-bottom: 1px solid #cecece;
+    margin: 20px 0;
+}
+#recruit{
+    border-bottom: 1px solid #cecece;
+    margin: 20px 0;
+}
+#map{
+    border-bottom: 1px solid #cecece;
+    margin: 20px 0;
+}
+#map_wrap{
+    width: 1000px;
+    height: 560px;
+}
+#map_bottom{    /*주소, 전화번호*/
+    background-color: rgba(110,110,162,0.7);
+    width: 900px;
+    height: 100px;
+}
+#map_bottom > p{
+    height: 50px;
+    line-height: 45px;
+    float: left;
+}
+#map_bottom > p:nth-of-type(3){
+    clear: both;
+}
+#map_bottom > p > img{
+    margin-right: 10px;
+    margin-top: 11px;
+    margin-left: 3px;
+}
+#map_bottom > p > span{
+    font-weight: bolder;
+    margin-right: 10px;
+}

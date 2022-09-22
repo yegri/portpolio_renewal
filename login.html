@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이예은</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/sub_top.js"></script>
+    <script src="js/main_bottom.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout_sub_common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="top_wrap">
+		<header>
+			<div id="main_top">
+               <div class="main_social">
+                <div id="main_left">
+                    <p><a href="#"><img src="images/facebook_logo.png" alt="페이스북 로고" width="30" height="30"></a></p>
+                    <p><a href="#"><img src="images/insta_logo.png" alt="인스타 로고" width="30" height="30"></a></p>
+                    <p><a href="#"><img src="images/youtube_logo.png" alt="유튜브 로고" width="30" height="30"></a></p>
+                </div>
+                <div id="main_right">
+                    <p><a href="#"><img src="images/search.png" alt="검색" width="30" height="20"></a></p>
+                    <p><a href="#">SITE MAP</a></p>
+                    <p><a href="login.html">LOG IN</a></p>
+                </div>
+                </div>
+                <div id="main_logo">
+                    <div id="logo_img">
+                        <p class="logo"><a href="index.html"><img src="images/logo_big2.png" alt="모나미 빅로고" width="370" height="120"></a></p>
+                    </div>
+                    <nav id="menu_wrap">
+                        <ul class="menu">
+                            <li class="sub_wrap"><a href="intro.html">모나미 소개</a>
+                                <ul class="sub sub1">
+                                    <li><a href="#">CEO 메세지</a></li>
+                                    <li><a href="#">회사연혁</a></li>
+                                    <li><a href="#">투자정보</a></li>
+                                    <li><a href="#">CI</a></li>
+                                    <li><a href="#">채용정보</a></li>
+                                    <li><a href="#">찾아오시는 길</a></li>
+                                    <li><a href="#">안전보건 경영방침</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_wrap"><a href="product.html">모나미 제품</a>
+                                 <ul class="sub sub2">
+                                    <li><a href="#">펜</a></li>
+                                    <li><a href="#">마카</a></li>
+                                    <li><a href="#">형광펜</a></li>
+                                    <li><a href="#">미술용품</a></li>
+                                    <li><a href="#">기타</a></li>
+                                     <li><a href="#">카탈로그</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_wrap"><a href="news_video.html">News &amp;Video</a>
+                                <ul class="sub sub3">
+                                    <li><a href="#">보도자료</a></li>
+                                    <li><a href="#">동영상자료</a></li>
+                                 </ul>
+                            </li>
+                            <li class="sub_wrap"><a href="#">모나미 미술대회</a>
+                                <ul class="sub sub4">
+                                    <li><a href="#">미술대회 소개</a></li>
+                                    <li><a href="#">수상자 발표</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_wrap"><a href="#">고객지원</a>
+                                <ul class="sub sub5">
+                                    <li><a href="#">자주하는 질문</a></li>
+                                    <li><a href="#">문의하기</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">모나미 패밀리샵 찾기</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_wrap"><a href="#">기업 구매/개발</a>
+                                <ul class="sub sub6">
+                                    <li><a href="#">기업 및 단체 구매</a></li>
+                                    <li><a href="#">산업용 맞춤 제품 개발</a></li>
+                                </ul>
+                            </li>
+                        </ul><!--menu-->
+                     </nav><!--menu_wrap-->
+                </div><!--main_logo-->
+			</div><!--main_top-->
+        </header><!--top-->
+	</div><!--top_wrap-->
+	
+ <div id="middle_wrap">
+     <div id="login_title">
+         <h3>로그인</h3>
+     </div><!--login_title-->
+     
+     <div id="login_container">
+       <div id="login_left">
+         <h4>LOGIN</h4>
+         <p>로그인이 필요한 서비스입니다.<br>고객님의 아이디와 비밀번호를 입력해 주세요.</p>
+       </div><!--login_left-->
+        <div id="login_right">
+            <form action="login.asp" method="post">
+                <p>아이디<input type="text" id="u_id" placeholder="아이디 입력" autocomplete="off" title="아이디"></p>
+                <p>비밀번호<input type="password" id="u_pwd" placeholder="비밀번호 입력" autocomplete="off" title="비밀번호"></p>
+                <p class="login_chk"><input type="checkbox" name="save" value="아이디 저장" id="chk1"><label for="chk1">아이디 저장</label></p>
+                <p class="login_chk"><input type="checkbox" name="save" value="비밀번호 저장" id="chk2"><label for="chk2">비밀번호 저장</label></p>
+                <p class="login_sub"><input type="button" value="로그인"></p>
+                <ul class="login_list">
+                    <li><a href="#">아이디 찾기</a></li>
+                    <li><a href="#">비밀번호 재발급</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </form>
+           <div id="login_sns">
+               <h5>SNS 로그인</h5>
+               <p><a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=7mIjdDqu3jDhY0Wf1jP2&redirect_uri=https%3A%2F%2Fwww.monamimall.com%2Fw%2Flogin%2FnaverCallback.do&state=ea48c707-ab9f-4f5d-abb8-76b849038f1d" target="_blank"><img src="images/naver_icon.png" alt="네이버 로고" width="60" height="60"></a></p>
+               <p><a href="https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=feab395df61711172a82d75708e89381&redirect_uri=https%3A%2F%2Fwww.monamimall.com%2Fw%2Flogin%2FkakaoCallback.do&state=login%2C%2Fw" target="_blank"><img src="images/kakao_icon.png" alt="카카오 로고" width="48" height="48"></a></p>
+               <p><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=2013658795560584&kid_directed_site=0&app_id=2013658795560584&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26display%3Dpopup%26scope%3Dpublic_profile%252Cemail%26client_id%3D2013658795560584%26redirect_uri%3Dhttps%253A%252F%252Fwww.monamimall.com%252Fw%252Flogin%252FfacebookCallback.do%26state%3Dbb20ad95-20ce-4c1b-91f5-1099d330da23%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D9ace3077-20c2-44e6-b50a-2e8e4412421f%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.monamimall.com%2Fw%2Flogin%2FfacebookCallback.do%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dbb20ad95-20ce-4c1b-91f5-1099d330da23%23_%3D_&display=popup&locale=ko_KR&pl_dbl=0" target="_blank"><img src="images/facebook_icon.png" alt="페이스북 로고" width="48" height="48"></a></p>
+           </div><!--login_sns-->
+        </div>
+    </div> <!--login_container-->
+ </div>
+ 
+ 
+ <div id="bottom_wrap">	
+	<footer id="bottom">
+	    <div id="bottom_top">
+	        <p><img src="images/foot_logo.jpg" alt="모나미 하단 로고" width="128" height="32"></p>
+	        <ul>
+	            <li><a href="#">회사소개</a></li>
+	            <li><a href="#">개인정보처리방침</a></li>
+	            <li><a href="#">이메일무단수집거부</a></li>
+	        </ul>
+	    </div><!--bottom_top-->
+	    <div id ="bottom_bottom">
+           <div>
+            <p>INFO</p>
+	        <address>
+	            ADDRESS : 경기도 용인시 수지구 손곡로 17 | TEL : 031-216-0153 | FAX : 031-270-5154 <br>
+	            COPYRIGHT(C) 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED.
+	        </address>
+	        </div>
+	        <div>
+	            <p>CUSTOMER CENTER</p>
+	            <p>080-022-0153</p>
+	        </div>
+            <div id="family_site">
+				<button>FAMILY SITE <span class="icon">∧</span></button>
+				<ul>
+					<li><a href="https://www.monamimall.com/w/main.do" target="_blank">모나미몰</a></li>
+					<li><a href="https://www.mon-arte.com/" target="_blank">모나르떼</a></li>
+					<li><a href="https://www.monamimall.com/w/cscenter/store/storeInfo.do" target="_blank">모나미 컨셉스토어</a></li>
+					<li><a href="http://www.hangso.co.kr/" target="_blank">주식회사 항소</a></li>
+					<li><a href="http://www.monamistation.com/main.do" target="_blank">모나미 스테이션</a></li>
+					<li><a href="https://www.monamimall.com/w/artcontest/info/artContestInfo.do" target="_blank">모나미 미술대회</a></li>
+					<li><a href="http://mpms.monami.com/promotion/" target="_blank">모나미 기업서비스</a></li>
+					<li><a href="http://www.monamicosmetics.com/" target="_blank">모나미코스메틱</a></li>
+				</ul>
+			</div>
+	    </div>
+	</footer>
+</div><!--bottom_wrap-->
+</body>
+</html>
